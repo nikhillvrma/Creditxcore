@@ -24,7 +24,7 @@ applyTheme(localStorage.getItem(THEME_KEY) || "system");
 // CredexCore frontend logic — talks to the FastAPI backend's /predict endpoint.
 // Change API_URL below if your backend runs on a different host/port.
 // ---------------------------------------------------------------------------
-const API_URL = "http://127.0.0.1:8000/predict";
+const API_URL = "https://creditxcore.onrender.com/predict";
 
 const form = document.getElementById('applicantForm');
 const submitBtn = document.getElementById('submitBtn');
