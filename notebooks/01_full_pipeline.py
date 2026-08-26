@@ -1,5 +1,5 @@
 """
-CreditSense AI — Full modeling pipeline
+Creditxcore — Full modeling pipeline
 Run this as a script, or paste cells into a Jupyter notebook.
 
 Sections:

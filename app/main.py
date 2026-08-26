@@ -1,5 +1,5 @@
 """
-CreditSense AI — FastAPI backend
+Creditxcore — FastAPI backend
 Serves credit-default risk predictions with SHAP-based per-applicant explanations.
 
 Run locally:
@@ -21,7 +21,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "models")
 
 app = FastAPI(
-    title="CreditSense AI",
+    title="Creditxcore",
     description="Explainable credit default risk scoring API",
     version="1.0.0",
 )

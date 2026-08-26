@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CredexCore — Credit Risk, Explained</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <div class="eyebrow">Ledger 01 — Applicant Intake</div>
+      <h1>CredexCore</h1>
+    </div>
+    <div>
+      <div class="tagline">Explainable credit risk<br>assessment engine</div>
+      <div class="theme-switch" id="themeSwitch">
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+        <button type="button" data-theme-choice="system">System</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Applicant Details</h2>
+      <div class="sub">Enter the applicant's financial profile to generate a risk assessment.</div>
+
+      <form id="applicantForm">
+        <div class="grid2">
+          <div class="field">
+            <label for="income">Annual Income</label>
+            <input type="number" id="income" value="45000" step="100" required>
+          </div>
+          <div class="field">
+            <label for="age">Age</label>
+            <input type="number" id="age" value="35" step="1" required>
+          </div>
+          <div class="field">
+            <label for="loan">Loan Amount</label>
+            <input type="number" id="loan" value="5000" step="50" required>
+          </div>
+          <div class="field">
+            <label for="employment">Employment Type</label>
+            <select id="employment">
+              <option>Salaried</option>
+              <option>Self-Employed</option>
+              <option>Contract</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="creditHistory">Credit History (years)</label>
+            <input type="number" id="creditHistory" value="8" step="0.5" required>
+          </div>
+          <div class="field">
+            <label for="numLoans">Existing Loans</label>
+            <input type="number" id="numLoans" value="1" step="1" min="0" required>
+          </div>
+          <div class="field">
+            <label for="latePayments">Late Payments (24m)</label>
+            <input type="number" id="latePayments" value="0" step="1" min="0" required>
+          </div>
+          <div class="field">
+            <label for="utilization">Credit Utilization (%)</label>
+            <input type="number" id="utilization" value="30" step="0.1" min="0" max="100" required>
+          </div>
+          <div class="field">
+            <label for="emiBurden">EMI Burden (% of income)</label>
+            <input type="number" id="emiBurden" value="15" step="0.1" min="0" max="100" required>
+          </div>
+          <div class="field">
+            <label for="dependents">Number of Dependents</label>
+            <input type="number" id="dependents" value="1" step="1" min="0" required>
+          </div>
+          <div class="field">
+            <label for="cityTier">City Tier</label>
+            <select id="cityTier">
+              <option>Tier-1</option>
+              <option>Tier-2</option>
+              <option>Tier-3</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="savings">Savings Balance</label>
+            <input type="number" id="savings" value="8000" step="100" required>
+          </div>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="assess" id="submitBtn">Assess Risk</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel verdict-panel">
+      <h2>Verdict Ledger</h2>
+      <div class="sub">Decision and contributing factors appear here.</div>
+
+      <div id="verdictBody">
+        <div class="verdict-empty" id="emptyState">
+          <div class="glyph">?</div>
+          <p>No assessment run yet. Fill in the applicant form and click "Assess Risk."</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>CredexCore — built on XGBoost + SHAP · academic project demo</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -8,6 +8,4 @@ optuna
 fastapi
 uvicorn[standard]
 pydantic
-streamlit
-requests
 joblib

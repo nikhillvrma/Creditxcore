@@ -1,20 +1,20 @@
 {
   "logreg_pr_auc": 0.9269896474875658,
   "rf_pr_auc": 1.0,
-  "xgb_pr_auc": 1.0000000000000002,
-  "xgb_roc_auc": 1.0,
+  "xgb_pr_auc": 1.0000000000000004,
+  "xgb_roc_auc": 0.9999999999999999,
   "best_params": {
-    "max_depth": 8,
-    "learning_rate": 0.04536791864019592,
-    "n_estimators": 294,
-    "subsample": 0.8575819141887816,
-    "colsample_bytree": 0.6262435067533791,
-    "min_child_weight": 1
+    "max_depth": 4,
+    "learning_rate": 0.016239535330299155,
+    "n_estimators": 344,
+    "subsample": 0.7858444422996673,
+    "colsample_bytree": 0.7384357341689103,
+    "min_child_weight": 8
   },
   "confusion_matrix": [
     [
-      343,
-      0
+      342,
+      1
     ],
     [
       0,
