@@ -1,7 +1,7 @@
 // ---------------------------------------------------------------------------
 // Theme switcher — Light / Dark / System, remembered across visits
 // ---------------------------------------------------------------------------
-const THEME_KEY = "credexcore-theme";
+const THEME_KEY = "creditxcore-theme";
 const htmlEl = document.documentElement;
 const themeButtons = document.querySelectorAll("#themeSwitch button");
 
@@ -21,7 +21,7 @@ themeButtons.forEach(btn => {
 applyTheme(localStorage.getItem(THEME_KEY) || "system");
 
 // ---------------------------------------------------------------------------
-// CredexCore frontend logic — talks to the FastAPI backend's /predict endpoint.
+// Creditxore frontend logic — talks to the FastAPI backend's /predict endpoint.
 // Change API_URL below if your backend runs on a different host/port.
 // ---------------------------------------------------------------------------
 const API_URL = "https://creditxcore.onrender.com/predict";

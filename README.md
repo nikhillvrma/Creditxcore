@@ -60,6 +60,8 @@ Creditxcore/
 │   ├── style.css                    # ledger/stamp visual theme
 │   └── script.js                    # calls the FastAPI backend, renders verdict
 │
+│
+├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
