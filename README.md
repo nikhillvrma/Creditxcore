@@ -110,22 +110,3 @@ you'd stress-test this with a **held-out noisier real-world dataset** (e.g. the
 UCI "Default of Credit Card Clients" dataset) to show the pipeline generalizes,
 not just the specific synthetic data. That's an easy extension if you want to
 push this further.
-
-## Resume bullet you can use
-
-> Built and deployed **CreditSense AI**, an explainable credit-risk scoring
-> system (XGBoost + SHAP, FastAPI, Streamlit) with SMOTE-based imbalance
-> handling, Optuna hyperparameter tuning, probability calibration, and
-> per-applicant natural-language risk explanations.
-
-## Possible extensions (pick 1–2 if you want to go further)
-
-- **LLM explanation layer**: feed the SHAP output into an LLM prompt (reuse your
-  DocBot AI pattern) to turn `"EMI_Burden_Ratio_Pct increases risk"` into a
-  loan-officer-friendly sentence.
-- **Fairness audit**: check if predictions differ unfairly across `City_Tier`
-  using `fairlearn` — strong "responsible AI" angle for a viva.
-- **Drift monitoring**: use `evidently` to simulate incoming data drift and
-  show how you'd detect a model going stale in production.
-- **React dashboard** instead of Streamlit, deployed to Vercel next to the
-  FastAPI backend on Render/Railway, matching your DocBot AI deployment setup.
