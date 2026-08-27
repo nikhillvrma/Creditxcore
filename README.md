@@ -34,7 +34,7 @@ resume-grade final-year project. This project:
 ```
 ## Project Structure
 
-```
+
 Creditxcore/
 ├── data/
 │   ├── Credit_Default.csv           # original raw dataset
@@ -64,7 +64,7 @@ Creditxcore/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-```
+
 ```
 
 ## How to run it yourself
