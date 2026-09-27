@@ -7,6 +7,8 @@ An end-to-end, explainable machine learning system that predicts loan default ri
 and generates human-readable, SHAP-based explanations for each decision — built on
 top of an enriched version of the `Credit_Default.csv` dataset.
 
+## 🌐 Live Project Link - https://creditxcore.vercel.app/
+
 ## Why this is more than a classroom notebook
 
 The original dataset has only 4 features (`Income`, `Age`, `Loan`, `Loan to Income`)
