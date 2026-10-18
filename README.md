@@ -3,13 +3,11 @@
 > **Note:** All scripts use paths relative to the project folder, so this runs
 > correctly no matter where you extract/clone it — no manual path editing needed.
 
-An end-to-end, explainable machine learning system that predicts loan default risk
-and generates human-readable, SHAP-based explanations for each decision — built on
-top of an enriched version of the `Credit_Default.csv` dataset.
+An end-to-end, explainable machine learning system that predicts loan default risk and generates human-readable, SHAP-based explanations for each decision — built on top of an enriched version of the `Credit_Default.csv` dataset.
 
 ## 🌐 Live Project Link - https://creditxcore.vercel.app/
 
-![Dashboard Page 1](Images/interface.png)
+![Interface](Images/interface.png)
 
 ## Why this is more than a classroom notebook
 
